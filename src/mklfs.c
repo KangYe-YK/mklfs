@@ -92,7 +92,7 @@ static void create_dir(char *src) {
     char *path;
     int ret;
 
-    path = strchr(src, '/');
+    path = strrchr(src, '/');
     if (path) {
         fprintf(stdout, "%s\r\n", path);
 
@@ -107,7 +107,7 @@ static void create_file(char *src) {
     char *path;
     int ret;
 
-    path = strchr(src, '/');
+    path = strrchr(src, '/');
     if (path) {
         fprintf(stdout, "%s\r\n", path);
 
